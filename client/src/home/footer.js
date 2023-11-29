@@ -48,7 +48,7 @@ const Footer = () => {
         </Typography>
         <Copyright />
         <Typography variant="subtitle1" align="center" sx={raleway}>
-          Developed by Sneha Singh
+          Developed by Akshay kumar
         </Typography>
 
         <Grid container>
@@ -87,7 +87,7 @@ const Footer = () => {
               <EmailIcon />
               <Typography variant="body2">
                 {" "}
-                sneha.20198023@mnnit.ac.in{" "}
+                akshay.20208012@mnnit.ac.in{" "}
               </Typography>
             </IconButton>
             <IconButton href="#" sx={iconButton}>
