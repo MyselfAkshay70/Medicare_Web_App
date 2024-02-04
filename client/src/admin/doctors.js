@@ -20,7 +20,7 @@ const Doctors = () => {
       setDoctors(snapshot.docs.map((doc) => doc.data()));
     });
   }, []);
-
+   console.log(doctors);
   // FUNCTION TO VERIFY DOCTOR'S PROFILE
   const handleVerify = (uid) => {
     db.collection("doctors").doc(uid).update({
@@ -28,13 +28,13 @@ const Doctors = () => {
       unreadCount: 1,
       updatedAt: new Date(),
     });
-
+   console.log("hello1");
     db.collection("doctors").doc(uid).collection("notifications").add({
       message: "Your profile has been verified by the admin!",
       sentAt: new Date(),
     });
   };
-
+  console.log("hello2");
   // FUNCTION TO UNVERIFY DOCTOR'S PROFILE
   const handleUnverify = (uid) => {
     db.collection("doctors").doc(uid).update({
@@ -63,6 +63,7 @@ const Doctors = () => {
               <List>
                 {doctors.map((doctor) => {
                   if (doctor.isVerified === "pending")
+                  console.log(doctor);
                     return (
                       <ListItem sx={listItem}>
                         <Grid container>

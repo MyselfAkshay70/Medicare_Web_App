@@ -23,13 +23,15 @@ const Create_Post = () => {
 
   const handleChange = (e) => {
     if (e.target.files[0]) {
+      console.log(e);
       setImage(e.target.files[0]);
     }
   };
 
   const handleCreate = () => {
+    console.log(image);
     const uploadTask = storage.ref(`post_images/${image.name}`).put(image);
-
+   console.log(uploadTask);
     uploadTask.on(
       "state_changed",
       (snapshot) => {
@@ -37,17 +39,18 @@ const Create_Post = () => {
           (snapshot.bytesTransferred / snapshot.totalBytes) * 100
         );
         setProgress(progress);
+        console.log(progress);
       },
       (error) => {
         console.log(error);
       },
       () => {
-        storage
-          .ref("post_images")
-          .child(image.name)
-          .getDownloadURL()
-          .then((url) => {
-            setUrl(url);
+        // storage
+        //   .ref("post_images")
+        //   .child(image.name)
+        //   .getDownloadURL()
+        //   .then((url) => {
+        //     setUrl(url);
             db.collection("posts").add({
               title: title,
               body: body,
@@ -55,8 +58,8 @@ const Create_Post = () => {
               createdAt: new Date(),
             });
           });
-      }
-    );
+      //}
+   //);
 
     history.push("/latest_updates");
   };
