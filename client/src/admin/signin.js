@@ -31,7 +31,7 @@ const Admin_Signin = () => {
   //     setAdmins(snapshot.docs.map((doc) => doc.data()));
   //   });
   // }, []);
-const admins =["admin1@example.com"];
+const admins =["admin1@example.com","admin1@gmail.com"];
   // SIGN IN WITH EMAIL AND PASSWORD FUNCTION
   const handleSignin = (e) => {
     console.log("hello1");

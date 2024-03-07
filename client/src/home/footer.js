@@ -48,7 +48,7 @@ const Footer = () => {
         </Typography>
         <Copyright />
         <Typography variant="subtitle1" align="center" sx={raleway}>
-          Developed by Akshay kumar
+          Developed By Team Project
         </Typography>
 
         <Grid container>
@@ -58,11 +58,11 @@ const Footer = () => {
               Connect with us
             </Typography>
 
-            <IconButton href="https://github.com/Sneha0607" sx={iconButton}>
+            <IconButton href="#" sx={iconButton}>
               <GitHubIcon />
             </IconButton>
 
-            <IconButton href="https://twitter.com/sneha_0607" sx={iconButton}>
+            <IconButton href="#" sx={iconButton}>
               <TwitterIcon />
             </IconButton>
 

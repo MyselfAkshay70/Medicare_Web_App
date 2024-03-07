@@ -62,8 +62,10 @@ const Doctors = () => {
             <Paper sx={paper}>
               <List>
                 {doctors.map((doctor) => {
-                  if (doctor.isVerified === "pending")
-                  console.log(doctor);
+
+                  if (doctor.isVerified == "false")
+                  console.log(doctor.isVerified)
+                
                     return (
                       <ListItem sx={listItem}>
                         <Grid container>
@@ -110,7 +112,8 @@ const Doctors = () => {
             <Paper sx={paper}>
               <List>
                 {doctors.map((doctor) => {
-                  if (doctor.isVerified == "true")
+                  if (doctor.isVerified =="true")
+                  console.log(doctor.isVerified)
                     return (
                       <ListItem sx={listItem}>
                         <Grid container>
