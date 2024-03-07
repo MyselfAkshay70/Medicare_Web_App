@@ -36,6 +36,7 @@ It is an online medical appointments and consultation website, built using NodeJ
 - Patients can search for any doctor according to his/her name/speciality/city
 - Patients can book appointments in the doctor's slot
 - Doctors can either cancel/confirm appointments
+- Patients are able to see Doctor qualifications.
 - A meeting is automatically scheduled for confirmed appointments and the notification is sent to the patient as well
 - In the meeting, doctors can view patient's profile, chat, toggle their camera and mic, give prescription, update patient's blood sugar level
 - In the meeting, patients can chat, toggle their camera and mic, can read and download the prescription given by doctor, can rate and review the doctor
