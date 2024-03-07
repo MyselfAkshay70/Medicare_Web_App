@@ -61,3 +61,4 @@ npm install
 npm start
 ```
 To get the database working, the firebase configuration needs to be added in client/src/firebase.js file after cloning the repository.
+# Medicare_Web_App
